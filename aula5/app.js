@@ -1,4 +1,6 @@
-var = require("http");
+var http = require("http");
 
-http.createserver().listen(8081);
+http.createServer(function(req, res){
+  res.end("ola")
+}).listen(8081);
 console.log("Esta rodando!");
